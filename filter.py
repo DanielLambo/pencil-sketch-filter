@@ -23,9 +23,9 @@ def apply_filter(pixels):
       new_row = []
       for col in range(len(pixels[row])):
         if col+1<len(pixels[row]) and row+1<len(pixels):
-          B = 3
-          C = 6
-          D= 8
+          B=3
+          C=7
+          D=9
         
 
           r, g, b = pixels[row][col]
@@ -37,7 +37,7 @@ def apply_filter(pixels):
           elif(rn-r<=C and rn-r<=C) and(gn-g<=C and gn-g<=C) and (bn-b<=C and bn-b<=C):
             new_row.append((160,160,160))
           elif (rn-r<=D and rn-r<=D) and(gn-g<=D and gn-g<=D) and (bn-b<=D and bn-b<=D):
-            new_row.append((10,100,100))
+            new_row.append((100,100,100))
           else:
             new_row.append((40,40,40))
         else:
